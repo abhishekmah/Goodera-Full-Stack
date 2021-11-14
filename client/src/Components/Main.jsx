@@ -70,7 +70,14 @@ const Main = () => {
                         />
                     </div>
                     <div>
-                        <select name="select location" id=""></select>
+                        <input
+                            onChange={(e) => {
+                                setSearchTitle(e.target.value);
+                            }}
+                            className="titleInput"
+                            type="text"
+                            placeholder="search for title"
+                        />
                     </div>
                     <button
                         onClick={() => {
