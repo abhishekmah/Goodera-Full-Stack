@@ -4,16 +4,30 @@ import Navbar from './Navbar';
 
 const Main = () => {
     return (
-        <div className={styles.main}>
-            <div className={styles.blue}>
-                <div className={styles.box}>
-                    <div className={styles.nav}>
-                        <div className={styles.left}>
-                            <button>JobHunt</button>
-                            <button>Find Jobs</button>
-                            <button>Upskill Yourself</button>
-                        </div>
-                        <div className={styles.right}></div>
+        <div>
+            <div className={styles.main}>
+                <div className={styles.blue}>
+                    <div className={styles.box}>
+                        <Navbar />
+                        <br />
+                        <br />
+                        <h1>Find Your Dream Job</h1>
+                        <p>
+                            Browse through thousands of full-time or part-time
+                            jobs near you
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.searchBox}>
+
+                </div>
+                <div className={styles.jobs}>
+                    {/* <br /> */}
+                    <div className={styles.jobsBox}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                 </div>
             </div>

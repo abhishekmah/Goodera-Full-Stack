@@ -3,21 +3,60 @@
 }
 .blue {
     width: 100%;
-    height: 364px;
+    padding-top: 1px;
+    height: 314px;
     background: linear-gradient(274.83deg, #5db0df 0.58%, #5d7adf 74.3%);
 }
-.box{
-    width: 100%;
+.box {
+    width: 85%;
     margin: auto;
 }
-.nav{
+.box > h1 {
+    text-align: left;
+    color: white;
+}
+.box > p {
+    margin-top: -19px;
+    text-align: left;
+    color: white;
+}
+.nav {
     /* width: 100%; */
     margin: auto;
     display: grid;
     grid-template-columns: 60% 40%;
 }
-.left{
+.left {
     display: flex;
     justify-content: start;
     border: 1px solid grey;
+}
+.searchBox {
+    position: relative;
+    top: -40px;
+    width: 85%;
+    height: 90px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+.jobs {
+    width: 100%;
+    /* height: 380px; */
+    background-color: #e8e8e8;
+}
+.jobsBox {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 49.5% 49.5%;
+    grid-gap: 1rem;
+    /* border: 1px solid grey; */
+}
+.jobsBox > div {
+    height: 170px;
+    border-radius: 10px;
+    background-color: white;
+    /* border:  solid grey; */
 }
