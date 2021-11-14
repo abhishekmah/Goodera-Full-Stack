@@ -60,20 +60,44 @@ const Main = () => {
                 </div>
                 <div className={styles.searchBox}>
                     <div>
-                        <input type="text" placeholder="" />
+                        <input
+                            onChange={(e) => {
+                                setSearch(e.target.value);
+                            }}
+                            className="titleInput"
+                            type="text"
+                            placeholder="search with location"
+                        />
                     </div>
                     <div>
                         <select name="select location" id=""></select>
                     </div>
-                    <button>Search</button>
+                    <button
+                        onClick={() => {
+                            handleSearch(search);
+                            setSearch('');
+                        }}
+                    >
+                        Search
+                    </button>
                 </div>
                 <div className={styles.jobs}>
                     {/* <br /> */}
                     <div className={styles.jobsBox}>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        {data.map((e) => (
+                            <div className="dataDiv" key={e.id}>
+                                <h1>{e.title}</h1>
+                                <p>{e.description}</p>
+                                <button
+                                    onClick={() => {
+                                        handleOpen(e.id);
+                                    }}
+                                    className="viewDetail"
+                                >
+                                    View Detail
+                                </button>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

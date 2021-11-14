@@ -45,7 +45,7 @@
     /* border: 1px solid grey; */
 }
 .jobsBox > div {
-    height: 170px;
+    height: 175px;
     border-radius: 10px;
     background-color: white;
     /* border:  solid grey; */
@@ -55,7 +55,7 @@
     padding-left: 20px;
     padding-right: 20px;
     top: -40px;
-    width: 85%;
+    width: 82%;
     height: 80px;
     margin: auto;
     border-radius: 10px;
@@ -80,4 +80,15 @@
     font-weight: 600;
     color: white;
     background-color: rgb(243, 125, 145);
+}
+.dataDiv{
+    width: 500px;
+    height: 200px;
+    background-color: lightgray;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+}
+.dataDiv>p{
+    text-align: left;
 }
