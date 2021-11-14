@@ -1,0 +1,11 @@
+.nav{
+    /* width: 100%; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.left{
+    display: flex;
+    justify-content: start;
+    border: 1px solid grey;
+}
