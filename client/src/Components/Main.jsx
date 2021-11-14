@@ -1,8 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './Main.module.css';
 import Navbar from './Navbar';
+import axios from 'axios';
 
 const Main = () => {
+    const [data, setData] = useState([]);
+    const [search, setSearch] = useState('');
+    const [searchtitle, setSearchTitle] = useState('');
+    const [detail, setDetail] = useState([]);
+
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = (id) => {
+        axios.get(`http://localhost:1234/job/${id}`).then((data) => {
+            setDetail(data);
+        });
+
+        console.log('data', id);
+        setOpen(true);
+    };
+    const handleClose = () => setOpen(false);
+
+    useEffect(() => {
+        axios.get('http://localhost:1234/job').then((data) => {
+            console.log(data.data.job);
+            setData(data.data.job);
+        });
+    }, []);
+
+    const handleSearch = (search) => {
+        axios.get(`http://localhost:1234/job`).then((data1) => {
+            var newData = data1.data.job.filter((e) => e.city === search);
+            console.log('newData', newData);
+            setData(newData);
+        });
+    };
+
+    const handleSearch1 = (search) => {
+        axios.get(`http://localhost:1234/job`).then((data1) => {
+            var newData1 = data1.data.job.filter((e) => e.title === search);
+            console.log('newData', newData1);
+            setData(newData1);
+        });
+    };
+
     return (
         <div>
             <div className={styles.main}>
