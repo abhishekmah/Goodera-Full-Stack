@@ -8,16 +8,19 @@
     justify-content: start;
     /* border: 1px solid grey; */
 }
-.right{
+.right {
     display: flex;
     justify-content: end;
     /* border: 1px solid grey; */
 }
-.btn{
-    width: 130px;
+.btn {
+    width: 170px;
     height: 40px;
     cursor: pointer;
     color: white;
     font-weight: 600;
-    font-size: 18px;
+    margin-left: -10px;
+    background: none;
+    border: none;
+    font-size: 17px;
 }

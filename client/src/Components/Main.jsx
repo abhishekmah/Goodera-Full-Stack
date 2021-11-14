@@ -19,7 +19,13 @@ const Main = () => {
                     </div>
                 </div>
                 <div className={styles.searchBox}>
-
+                    <div>
+                        <input type="text" placeholder="" />
+                    </div>
+                    <div>
+                        <select name="select location" id=""></select>
+                    </div>
+                    <button>Search</button>
                 </div>
                 <div className={styles.jobs}>
                     {/* <br /> */}

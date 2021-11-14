@@ -5,13 +5,13 @@ const Navbar = () => {
     return (
         <div className={styles.nav}>
             <div className={styles.left}>
-                <div className={styles.btn} style={{marginLeft: -25,marginRight: -20}}>JobHunt</div>
-                <div className={styles.btn}>Find Jobs</div>
-                <div className={styles.btn}>Upskill Yourself</div>
+                <button className={styles.btn} style={{marginLeft: -25,marginRight: -20}}>JobHunt</button>
+                <button className={styles.btn}>Find Jobs</button>
+                <button className={styles.btn}>Upskill Yourself</button>
             </div>
             <div className={styles.right}>
-                <div className={styles.btn}>Post a Job</div>
-                <div className={styles.btn}>Sign in</div>
+                <button className={styles.btn}>Post a Job</button>
+                <button className={styles.btn}>Sign in</button>
             </div>
         </div>
     );
